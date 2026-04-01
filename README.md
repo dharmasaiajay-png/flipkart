@@ -1,2 +1,3 @@
 # flipkart
 e-commerce application
+This  application contains home page, clothes page, electronics page etc...
