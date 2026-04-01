@@ -1,5 +1,201 @@
-<title>Flipkart-clothes</title>
-<h1>all clothing brands are availble in flipkart..</h1>
-<p>jogh players</p>
-<p>sketchers</p>
-<p>nike</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Clothes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #667eea;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .brands-section {
+            margin-top: 30px;
+        }
+
+        .brands-section h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .brand-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .brand-card a {
+            display: block;
+            padding: 30px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .brand-card a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .breadcrumb {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Flipkart Clothes</h1>
+            <p>All clothing brands are available in Flipkart</p>
+        </header>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="clothes.html">👕 Clothes</a>
+            <a href="electronics.html">💻 Electronics</a>
+            <a href="shoes.html">👞 Shoes</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="contact.html">📞 Contact</a>
+        </nav>
+
+        <div class="content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Clothes</span>
+            </div>
+
+            <div class="brands-section">
+                <h2>Popular Clothing Brands</h2>
+                <div class="brands-grid">
+                    <div class="brand-card">
+                        <a href="brand-jogplay.html">👟 Jogh Players</a>
+                    </div>
+                    <div class="brand-card">
+                        <a href="brand-sketchers.html">👞 Sketchers</a>
+                    </div>
+                    <div class="brand-card">
+                        <a href="brand-nike.html">🏃 Nike</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Flipkart Clothes Store. All rights reserved.</p>
+            <p>Follow us on social media for updates and exclusive offers!</p>
+        </footer>
+    </div>
+</body>
+</html>
