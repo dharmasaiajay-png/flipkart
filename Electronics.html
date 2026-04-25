@@ -1,18 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Flipkart-Electronics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Electronics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px 0;
+            border-top: 3px solid #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        nav a.active {
+            background: white;
+            color: #667eea;
+        }
+        
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        li {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        li:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(102, 126, 234, 0.5);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <h1>In Flipkart we have electronics (International brands)</h1>
-  
-  <p>Here are some popular international electronics brands available:</p>
-  <ul>
-    <li>Samsung</li>
-    <li>Apple</li>
-    <li>Sony</li>
-    <li>LG</li>
-  </ul>
+    <div class="container">
+        <header>
+            <h1>📱 Electronics & Gadgets</h1>
+            <p style="margin: 0; color: #666;">International Brands at Best Prices</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Clothes.html">Clothes</a>
+            <a href="Electronics.html" class="active">Electronics</a>
+        </nav>
+        
+        <h2 style="color: #333; text-align: center; margin: 30px 0 15px;">In Flipkart we have electronics (International brands)</h2>
+        
+        <p>Here are some popular international electronics brands available:</p>
+        <ul>
+            <li>📱 Samsung</li>
+            <li>🍎 Apple</li>
+            <li>📺 Sony</li>
+            <li>🔌 LG</li>
+        </ul>
+        
+        <footer>
+            <p>&copy; 2026 Flipkart. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
-
