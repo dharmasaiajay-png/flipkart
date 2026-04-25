@@ -3,49 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes</title>
+    <title>Flipkart Clothes</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
+        
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            padding: 50px;
         }
+        
         header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px 0;
+            border-top: 3px solid #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        nav a.active {
+            background: white;
+            color: #667eea;
+        }
+        
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
             text-align: center;
         }
-        nav {
-            margin-top: 10px;
+        
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
         }
-        nav a {
-            color: #333;
-            margin: 0 15px;
-            text-decoration: none;
+        
+        li {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
-        nav a:hover {
-            text-decoration: underline;
+        
+        li:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(102, 126, 234, 0.5);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Clothes Page</h1>
-        <nav>
-            <a href="/home.html">Home</a>
-            <a href="/products.html">Products</a>
-            <a href="/contact.html">Contact Us</a>
-        </nav>
-    </header>
     <div class="container">
-        <h2>Explore Our Clothing Collection</h2>
-        <p>Find the best clothes for any occasion.</p>
+        <header>
+            <h1>👕 All Clothing Brands</h1>
+            <p style="margin: 0; color: #666;">Premium Fashion at Best Prices</p>
+        </header>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Clothes.html" class="active">Clothes</a>
+            <a href="Electronics.html">Electronics</a>
+        </nav>
+        
+        <h2 style="color: #333; text-align: center; margin: 30px 0 15px;">All Clothing Brands are Available in Flipkart</h2>
+        
+        <p>Here are some popular clothing brands you can find:</p>
+        <ul>
+            <li>👖 Levi's</li>
+            <li>👟 Adidas</li>
+            <li>🏃 Nike</li>
+            <li>⚽ Puma</li>
+        </ul>
+        
+        <footer>
+            <p>&copy; 2026 Flipkart. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
